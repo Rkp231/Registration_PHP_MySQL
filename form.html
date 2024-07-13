@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>CUSTOMER REGISTRATION</title>
+        </head>
+    <body bgcolor="yellow">
+        <fieldset>
+            <legend>Personal Information</legend>
+       <form action="insert.php" method="post" enctype="multipart/form-data">
+          
+            CUSTOMER NAME      : <input type="text" name="n1" placeholder="Enter Name" required /><br><br>
+            CUSTOMER PASSWORD  : <input type="password" name="p1" placeholder="Enter password" required/>
+	     <p>Must contain at least 1 number and 1 letter,May contain any of these characters: !@#$%,Must be 8-12 characters</p>
+			CONFIRM PASSWORD  : <input type="password" name="p2" placeholder="Confirm password" required/><br><br>
+            GENDER             : <input type="radio" name="g1" value="Male" required/>Male
+                                 <input type="radio" name="g1" value="Female" required/>Female<br><br>
+            ADDRESS            : <textarea name="a1" rows="4" cols="20" required></textarea><br><br>
+            STATE : <select name="s1" required>
+                    <option selected="" disabled="">Select State</option>
+                    <option value="Delhi">DELHI</option>
+                    <option value="Maharashtra">MAHARASHTRA</option>
+                    <option value="Gujarat">GUJRAT</option>
+                    <option value="UP">UTTAR PRADESH</option>
+                    <option value="UP"> BANGLORE</option>
+                    <option value="UP">CHANDIGAARH</option>
+                </select><br><br>
+            DOB                : <input type="date" name="d1" placeholder="Enter date of birth" required/><br><br>
+            CONTACT NUMBER     : <input type="number" name="m1" placeholder="Enter contact number" required /><br><br>
+            EMAIL ID : <input type="text" name="e1" placeholder="Enter Email" required /><br><br>
+            INDUSTRY : <select name="i1[]" MULTIPLE required>
+                    <option selected="" disabled="">CHOOSE </option>
+                    <option value="IT">IT</option>
+					<option value="HOSPITALITY">HOSPITALITY</option>
+					<option value="ACEDEMIC">ACEDEMIC</option>
+					<option value="FINANCE">FINANCE</option>
+					<option value="TOUR">TOUR AND TRAVEL</option>
+                    <option value="DESIGNER">INTERIOR DESIGN</option>
+                    </select><br><br>
+			SELECT PHOTO :</b> <input type="file" name="p1" required /><br><br>
+                    <input type="submit" value="SAVE DETAILS" />
+                    <input type="reset" value="CLEAR" />
+            </form>
+			
+            
+            <a href="showalldata.php"><button type="button">SHOW ALL DATA</button></a>
+            
+            <a href="frontpage.html"><button type="button">BACK</button></a>
+        </fieldset>
+    </body>
+</html>
